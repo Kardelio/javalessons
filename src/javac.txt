@@ -1,0 +1,15 @@
+Just a note about using Javac
+
+Folder
+	- file a
+	- file b
+
+file a uses the class in fileb
+
+javac -d out/ filea.java
+
+-d = directory must exist
+
+
+run 
+java out/filea
