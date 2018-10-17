@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class loops {
 
     //region helpers
@@ -142,6 +144,67 @@ public class loops {
 
         /**
          * END Section 4 ......................
+         */
+        endOfSection();
+
+        /**
+         *
+         *
+         *
+         *
+         *
+         *
+         * BELOW IS ADVANCED
+         *
+         *
+         *
+         *
+         *
+         *
+         *
+         */
+
+        // =================================
+        // =================================
+        // =================================
+
+        startOfSection(5);
+        /**
+         * Section 5 ......................
+           */
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Ben");
+        names.add("Bob");
+        names.add("Steve");
+
+        for (int i = 0; i < names.size(); i++) {
+            prnt(names.get(i));
+        }
+
+        /**
+         * END Section 5 ......................
+         */
+        endOfSection();
+
+        // =================================
+        // =================================
+        // =================================
+
+        startOfSection(6);
+        /**
+         * Section 6 ......................
+         */
+        String[] emptyArray = new String[3];
+        //empty array of 3
+
+        String[] otherNames = {"Simon","Clives","Jones"};
+
+        for (int i = 0; i < otherNames.length; i++) {
+            prnt(otherNames[i]);
+        }
+
+        /**
+         * END Section 6 ......................
          */
         endOfSection();
     }
