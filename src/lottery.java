@@ -1,5 +1,3 @@
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 import java.util.Scanner;
 
 public class lottery {
@@ -30,5 +28,5 @@ public class lottery {
 }
 
 /**
- * Talk about Github
+ * Talk about Github ...
  */

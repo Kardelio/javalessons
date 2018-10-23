@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class session23102018 {
@@ -6,6 +7,10 @@ public class session23102018 {
 
     public static void main(String[] args)
     {
+
+//        ArrayList<String> tes = new ArrayList<>();
+//        tes.add("Test");
+//        tes.forEach(s -> System.out.println(s));
 
         boolean varFalse = false;
         boolean varTrue = true;
@@ -176,6 +181,7 @@ public class session23102018 {
         */
 
         //Task 1--------------------------------------------
+        //Read it like: ---> While i is less than 5 do this...
 
         int i = 0;
         while (i < 5)
@@ -185,6 +191,7 @@ public class session23102018 {
         }
 
         //Task 2--------------------------------------------
+        //Read it like: ---> While j is less than 10 do this...
 
         int j = 0;
         while (j < 10)
@@ -194,6 +201,7 @@ public class session23102018 {
         }
 
         //Task 3--------------------------------------------
+        //Read it like: ---> while mybool is true (while mybool contains true) do this...
 
         boolean mybool = true;
         while (mybool == true)    //can also write while(mybool)
@@ -203,6 +211,7 @@ public class session23102018 {
         }
 
         //Task 4--------------------------------------------
+        //Read it like: ---> While name is not "ben" do this...
         Scanner sc = new Scanner(System.in);
         String name = "";
 
@@ -214,6 +223,71 @@ public class session23102018 {
         }
         System.out.println("EXITED WHILE LOOP! - Name Must be ben! OMG!");
 
+
+        /**
+         * CHALLENGES BELOW......
+         *
+         */
+
+        /**
+         * What is the output of these bits of code?
+         */
+
+        // 1
+        int a = 20;
+        int b = 10;
+
+        while(a > b){
+            System.out.println("How many times do I print?");
+        }
+
+
+        // 1b
+        int c = 20;
+        int d = 10;
+
+        while(d > c){
+            System.out.println("How many times do I print?");
+        }
+
+
+        // 2
+        boolean endOfTheLine = false;
+        int counter = 0;
+
+        while (endOfTheLine == false) {
+            counter++;
+
+            if (counter > 3) {
+                endOfTheLine = true;
+            }
+        }
+
+
+
+        // 3
+        int score = 0;
+        int hearts = 3;
+
+        while(hearts > 0)
+        {
+            System.out.println("Playing the game...");
+            score++;
+
+            if(score % 10 == 0) //This means MODULUS - So when score is divided by 10 how much is the remainder..
+            {
+                hearts--;
+            }
+        }
+
+
     }
+
+
+
+
+
+
+
 
 }
