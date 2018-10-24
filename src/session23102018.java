@@ -242,6 +242,8 @@ public class session23102018 {
         }
 
 
+
+
         // 1b
         int c = 20;
         int d = 10;
@@ -251,17 +253,25 @@ public class session23102018 {
         }
 
 
+
+
+
+
         // 2
         boolean endOfTheLine = false;
         int counter = 0;
 
         while (endOfTheLine == false) {
             counter++;
-
+            System.out.println(counter);
             if (counter > 3) {
                 endOfTheLine = true;
             }
         }
+
+
+
+
 
 
 
@@ -271,7 +281,7 @@ public class session23102018 {
 
         while(hearts > 0)
         {
-            System.out.println("Playing the game...");
+            System.out.println("Playing the game..." + score + " ... " + hearts);
             score++;
 
             if(score % 10 == 0) //This means MODULUS - So when score is divided by 10 how much is the remainder..
@@ -279,7 +289,10 @@ public class session23102018 {
                 hearts--;
             }
         }
+        /*
+        Output:
 
+         */
 
     }
 

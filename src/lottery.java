@@ -14,6 +14,7 @@ public class lottery {
             while(lotteryNumber > 99 || lotteryNumber < 1){
                 System.out.println("Please enter number betwen 1 and 99!");
                 lotteryNumber = sc.nextInt();
+                //TODO block user entering the same number twice!
             }
 
             if(lotteryNumber == correctA || lotteryNumber == correctB || lotteryNumber == correctC || lotteryNumber == correctD){
@@ -29,4 +30,10 @@ public class lottery {
 
 /**
  * Talk about Github ...
+ */
+
+
+
+/*
+... Actually run the code examples!!!
  */
