@@ -10,19 +10,20 @@ public class trycatch {
 
     public static void main(String[] args)
     {
-
-        //TODO --- ----
-
         other();
     }
 
     public static void other(){
+
         try{
             // ... Some Code
             System.out.println("Here it goes");
             checkIsLessThan5(7);
             System.out.println("Still here!");
-        } catch (Exception e){
+            System.out.println("Still here1!");
+            System.out.println("Still here2!");
+            System.out.println("Still here3!");
+        } catch(Exception e){
             // ... If anything goes wrong
             System.out.println("OH No something went wrong!");
         } finally {
@@ -36,6 +37,8 @@ public class trycatch {
         This always happens at the end!
          */
     }
+
+
 
     private static String checkIsLessThan5(int a) throws Exception{
         if(a > 5){

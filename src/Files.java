@@ -13,22 +13,31 @@ public class Files {
 
 
     private static String readFileToStringArray(String file){
-        StringBuilder out = new StringBuilder();
+        String fileOutput = "";
 
         try {
-            FileInputStream fin =  new FileInputStream(file);
+            FileInputStream fin = new FileInputStream(______);
             InputStreamReader isr = new InputStreamReader(fin);
             BufferedReader bf = new BufferedReader(isr);
             String line = "";
             while ((line = bf.readLine()) != null) {
-                out.append(line);
-                out.append("\n");
+                fileOutput += line;
+                fileOutput += "\n";
             }
-        } catch(Exception e){
-            out = new StringBuilder("ERROR"+e.getMessage());
+        } catch (Exception e){
+            System.out.println(e.getMessage());
         }
 
-        return out.toString();
+
+
+
+        try {
+
+        } catch(Exception e){
+//            out = new StringBuilder("ERROR"+e.getMessage());
+        }
+
+        return fileOutput;
     }
 
 }
